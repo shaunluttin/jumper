@@ -1,8 +1,8 @@
 import * as pluralize from 'pluralize'
-import * as legacy from 'Legacy'
+import legacy from './legacy';
 
-export function getPlural (str: any) : string {
-  let oldObj = new legacy.OldOldClass();
+export function getPlural(str: any): string {
+  let oldObj = new legacy();
   oldObj.runSuperOldLogic('anything');
 
   return pluralize.plural(str)
